@@ -12,7 +12,6 @@ import org.springframework.boot.test.autoconfigure.graphql.tester.AutoConfigureG
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.graphql.test.tester.GraphQlTester;
 import org.springframework.test.annotation.DirtiesContext;
 
@@ -88,7 +87,6 @@ class UserControllerTest {
                     assertEquals("emre@outlook.com", user.mail());
                     assertEquals(Role.ADMIN, user.role());
                 });
-
     }
 
     @Test
@@ -187,5 +185,4 @@ class UserControllerTest {
 
         graphQlTester.document(document).execute().path("createUser");
     }
-
 }
