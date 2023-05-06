@@ -8,7 +8,6 @@ ___
 - _Java 17_
 - _Spring Boot 3.0.6_
 - _Spring Data JPA_
-- _Request-Response Pattern / Record-Dto_
 - _GraphQL_
 - _H2 In memory database_
 - _JUnit 5_
